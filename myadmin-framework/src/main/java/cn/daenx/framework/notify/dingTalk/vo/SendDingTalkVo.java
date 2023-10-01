@@ -1,10 +1,10 @@
-package cn.daenx.framework.common.vo.system.utils;
+package cn.daenx.framework.notify.dingTalk.vo;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 /**
- * 钉钉测试
+ * 钉钉发送消息
  */
 @Data
 public class SendDingTalkVo {
