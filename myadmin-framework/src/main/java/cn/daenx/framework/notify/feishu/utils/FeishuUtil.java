@@ -59,7 +59,7 @@ public class FeishuUtil {
         for (SysFeishuConfigVo vo : configVoList) {
             log.info("发送飞书ing，botName={}，msg：{}", false ? "成功" : "失败", vo.getBotName(), msg);
             JSONObject req = new JSONObject();
-            req.put("msgtype", "text");
+            req.put("msg_type", "text");
             JSONObject text = new JSONObject();
             text.put("text", ObjectUtil.isEmpty(vo.getKeywords()) ? msg : vo.getKeywords() + msg);
             req.put("content", text);
