@@ -100,7 +100,7 @@ INSERT INTO "public"."sys_config" VALUES ('0015263fa950c3ce40957fdb3b1e14a7', '�
 	"slider": {}
 }', '1', '0', '如果删除或者禁用此参数，那么系统将不开启验证码
 具体参数说明参考文档', '1', '2023-04-25 20:23:07', '1', '2023-05-19 22:03:25', 0);
-INSERT INTO "public"."sys_config" VALUES ('0ce0ea3dc352bb6838e4d008d9e849fc', '系统钉钉通知配置', 'sys.dingTalk.config', '{
+INSERT INTO "public"."sys_config" VALUES ('0ce0ea3dc352bb6838e4d008d9e849fc', '系统钉钉配置', 'sys.dingTalk.config', '{
 	"testbot": {
 		"keywords": "",
 		"secret": "SEC48ea902b5b3fb13876666666666666660a18e38bcb607ced5108f71f24a7",
