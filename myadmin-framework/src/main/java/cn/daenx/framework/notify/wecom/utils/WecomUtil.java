@@ -37,7 +37,7 @@ public class WecomUtil {
      * text类型，如果需要其他消息类型，请自己组装报文，然后调用sendByContent方法
      *
      * @param botName 机器人名称，在系统参数里自己填的，多个用,隔开
-     * @param msg     消息内容，不需要自己写关键词
+     * @param msg     消息内容
      * @return
      */
     public static List<WecomSendResult> sendMsg(String botName, String msg) {
@@ -75,7 +75,7 @@ public class WecomUtil {
      * 自己组装报文，以便实现更多消息类型
      *
      * @param botName 机器人名称，在系统参数里自己填的，多个用,隔开
-     * @param content JSON格式的数据，参考企业微信官网文档，不需要自己计算签名，但是需要写关键词（如果有的话）
+     * @param content JSON格式的数据，参考企业微信官网文档
      * @return
      */
     public static List<WecomSendResult> sendByContent(String botName, String content) {
