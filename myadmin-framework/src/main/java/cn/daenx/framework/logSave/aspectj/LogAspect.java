@@ -108,7 +108,9 @@ public class LogAspect {
             sysLogOper.setStatus(CommonConstant.STATUS_NORMAL);
         }
         // 执行人ID
-        sysLogOper.setCreateId(LoginUtil.getLoginUserId());
+        String loginUserId = LoginUtil.getLoginUserId();
+        sysLogOper.setCreateId(loginUserId);
+        sysLogOper.setUpdateId(loginUserId);
         // 响应时间
         sysLogOper.setResponseTime(LocalDateTime.now());
         // 执行耗时
