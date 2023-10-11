@@ -38,7 +38,6 @@
         <aliyun.dysmsapi.version>2.0.24</aliyun.dysmsapi.version>
         <bouncycastle.version>1.76</bouncycastle.version>
         <orai18n.version>23.2.0.0</orai18n.version>
-        <justauth.version>1.16.5</justauth.version>
     </properties>
     <profiles>
         <profile>
@@ -166,12 +165,6 @@
                 <groupId>org.bouncycastle</groupId>
                 <artifactId>bcprov-jdk15to18</artifactId>
                 <version>${bouncycastle.version}</version>
-            </dependency>
-            <!-- JustAuth-->
-            <dependency>
-                <groupId>me.zhyd.oauth</groupId>
-                <artifactId>JustAuth</artifactId>
-                <version>${justauth.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
