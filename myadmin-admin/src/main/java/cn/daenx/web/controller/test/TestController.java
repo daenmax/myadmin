@@ -57,7 +57,7 @@ public class TestController {
     }
 
     /**
-     * 多sheet表测试-导入
+     * 多sheet表-导入
      */
     @Log(name = "多sheet表-导入", type = LogOperType.IMPORT, recordParams = false, recordResult = true)
     @PostMapping("/importData")
@@ -76,9 +76,9 @@ public class TestController {
     }
 
     /**
-     * 多sheet表测试-下载导入模板
+     * 多sheet表-导出
      */
-    @Log(name = "多sheet表-下载导入模板", type = LogOperType.OTHER, recordParams = true, recordResult = false)
+    @Log(name = "多sheet表-导出", type = LogOperType.OTHER, recordParams = true, recordResult = false)
     @PostMapping("/importTemplate")
     public void importTemplate(HttpServletResponse response) {
         ExcelWriter writer = ExcelUtil.createExport(response, "多sheet表测试");
