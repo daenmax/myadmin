@@ -138,7 +138,7 @@ public class ExcelUtil {
      * 单sheet导出：XLSX
      * <p>
      * 使用案例：
-     * List<TestDataPageDto> list = testDataService.getAll(vo);
+     * List<TestDataPageDto> list = ...;//此处省略数组如何来的
      * ExcelUtil.exportXlsx(response, "测试数据", "测试数据", list, TestDataPageDto.class);
      *
      * @param response
