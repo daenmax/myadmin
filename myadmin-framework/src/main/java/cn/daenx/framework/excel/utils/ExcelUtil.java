@@ -28,6 +28,9 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 public class ExcelUtil {
+    /**
+     * 自定义表头样式
+     */
     public static CustomCellWriteStrategy customCellWriteStrategy = new CustomCellWriteStrategy();
 
     /**
