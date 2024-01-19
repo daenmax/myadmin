@@ -688,11 +688,11 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
      */
     @Override
     public void saveAuthRole(SysUserUpdAuthRoleVo vo) {
-        String loginUserId = LoginUtil.getLoginUserId();
-        if (loginUserId.equals(vo.getUserId())) {
+        SysLoginUserVo loginUser = LoginUtil.getLoginUser();
+        if (loginUser.getId().equals(vo.getUserId())) {
             throw new MyException("禁止操作自己");
         }
-        if (sysUserMapper.isAdmin(SystemConstant.ROLE_ADMIN, vo.getUserId())) {
+        if (!loginUser.getIsAdmin() && sysUserMapper.isAdmin(SystemConstant.ROLE_ADMIN, vo.getUserId())) {
             throw new MyException("禁止操作超级管理员");
         }
         SysUserPageDto sysUserByPermissions = getSysUserByPermissions(vo.getUserId());
