@@ -16,11 +16,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
 @Component
 @Slf4j
 public class LoginUtil {
 
     private static Long timeOut;
+
     @Value("${sa-token.timeout}")
     public void setTimeOut(Long timeOut) {
         LoginUtil.timeOut = timeOut;
@@ -242,21 +244,12 @@ public class LoginUtil {
     /**
      * 是否为管理员
      *
-     * @param userId
-     * @return
-     */
-    public static boolean isAdmin(String userId) {
-        return SystemConstant.IS_ADMIN_ID.equals(userId);
-    }
-
-    /**
-     * 是否为管理员
-     *
      * @return
      */
 
     public static boolean isAdmin() {
-        return SystemConstant.IS_ADMIN_ID.equals(getLoginUserId());
+        SysLoginUserVo loginUser = getLoginUser();
+        return loginUser.getIsAdmin();
     }
 
     /**
