@@ -1,9 +1,7 @@
 package cn.daenx.system.domain.po;
 
 import cn.daenx.framework.common.vo.BaseEntity;
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -27,8 +25,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @TableName(value = "sys_job_log")
 public class SysJobLog extends BaseEntity implements Serializable {
-    @TableId(value = "id", type = IdType.ASSIGN_UUID)
-    private String id;
 
     /**
      * 关联定时任务ID

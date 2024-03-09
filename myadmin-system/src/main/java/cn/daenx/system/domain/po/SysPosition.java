@@ -5,17 +5,14 @@ import cn.daenx.framework.excel.DictConverter;
 import cn.daenx.framework.serializer.annotation.Dict;
 import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
 import com.alibaba.excel.annotation.ExcelProperty;
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-import java.io.Serializable;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
 
 /**
  * 岗位表
@@ -28,8 +25,6 @@ import lombok.NoArgsConstructor;
 //导出时忽略没有@ExcelProperty的字段
 @ExcelIgnoreUnannotated
 public class SysPosition extends BaseEntity implements Serializable {
-    @TableId(value = "id", type = IdType.ASSIGN_UUID)
-    private String id;
 
     /**
      * 岗位名称
