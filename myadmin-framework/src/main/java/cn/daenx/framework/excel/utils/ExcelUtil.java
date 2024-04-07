@@ -28,10 +28,6 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 public class ExcelUtil {
-    /**
-     * 自定义表头样式
-     */
-    public static CustomCellWriteStrategy customCellWriteStrategy = new CustomCellWriteStrategy();
 
     /**
      * 单sheet导入：同步导入(适用于小数据量)
