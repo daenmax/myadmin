@@ -1,3 +1,6 @@
+## 代理
+https://zhuanlan.zhihu.com/p/692700795
+
 ## install  
 
 注意：如安装不成功请关闭淘宝源。
