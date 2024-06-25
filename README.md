@@ -24,11 +24,11 @@
 
 ### 文档教程
 
-[官网](https://myadmin.daenx.cn/)
+[官网](https://daenmax.github.io/myadmin/)
 
 ### 在线体验
 
-[等待部署](https://myadmin.daenx.cn/)
+[等待部署](https://daenmax.github.io/myadmin/)
 
 ### 前端仓库
 
@@ -72,7 +72,7 @@
         <p>MyAdmin 微信群(添加我微信备注"进群")</p>
       </td>
       <td align="center" valign="middle">
-        <img src="https://myadmin.daenx.cn/img/%E9%A6%96%E9%A1%B5%E5%9B%BE%E7%89%87/qqGroup.png" alt="群号: 373752019" style="width:100px;margin: 10px;">
+        <img src="https://daenmax.github.io/myadmin/img/%E9%A6%96%E9%A1%B5%E5%9B%BE%E7%89%87/qqGroup.png" alt="群号: 373752019" style="width:100px;margin: 10px;">
         <p>MyAdmin QQ群: 373752019</p>
       </td>
     </tr>
