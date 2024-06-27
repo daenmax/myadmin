@@ -36,7 +36,7 @@
 
 3.将项目下载到`pages`文件夹
 
-4.将`docs/.vuepress/config.js`中的`base`字段设置为你想使用的二级路径，一般为项目名称，例如`/myadmin/`
+4.将`docs/.vuepress/config.js`中的`base`字段设置为你仓库的名字，注意，必须是仓库名字，大小写也必须完全一样，例如`/MyAdmin/`
 
 5.提前`install`好
 
@@ -45,13 +45,13 @@
 ```
 git push -f git@github.com:用户名/项目仓库.git master:gh-pages
 //例如修改为如下
-git push -f git@github.com:daenmax/myadmin.git master:gh-pages
+git push -f git@github.com:daenmax/MyAdmin.git master:gh-pages
 ```
 
 6.使用`Git Bash Here`，输入`sh deploy.sh`（或者直接双击`deploy.sh`，选择使用`Git Bash`运行）
 
 7.这样就会自动创建一个`gh-pages`分支，并自动部署到github.io上，直接访问`你的用户名.github.io/二级路径`
-即可，例如`https://daenmax.github.io/myadmin/`
+即可，例如`https://daenmax.github.io/MyAdmin/`
 
 ## 其他
 
